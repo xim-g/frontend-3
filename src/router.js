@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Test from './views/Test.vue'
 import Registro from './views/Registro.vue'
+import Actividades from './views/Actividades.vue'
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/Registro',
       name: 'Registro',
       component: Registro
+    },
+    {
+      path: '/actividades',
+      name: 'Actividades',
+      component: Actividades
     },
   ]
 })
