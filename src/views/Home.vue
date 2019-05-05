@@ -30,9 +30,9 @@
     <tit> No estás solo...
     </tit>
      <br> <br> <br> <br>
-    <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
+    <a class="waves-effect waves-light btn-large" @click="loginFB()"><i class="material-icons left">cloud</i>Iniciar con Facebook</a>
      <br> <br> <br> <br> <br>
-    <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
+    <a class="waves-effect waves-light btn-large" @click="loginGH()"><i class="material-icons right">cloud</i>Iniciar con GitHub</a>
   
   </div>
   
@@ -60,12 +60,33 @@
 
 
 <script>
+const auth = firebase.auth();
+const facebook = new firebase.auth.FacebookAuthProvider();
+const github = new firebase.auth.GithubAuthProvider();
 export default {
   data(){
   	return {
   		nombre: "",
   		edad: 0
   	}
+  },
+  methods: {
+    loginFB() {
+	    auth.signInWithPopup(facebook).then(result => {
+		    console.log(result);
+	    }).catch(err => console.log(err));
+    },
+    logoutFB() {
+	    auth.signOut();
+    },
+    loginGH() {
+	    auth.signInWithPopup(github).then(result => {
+		    console.log(result);
+	    }).catch(err => console.log(err));
+    },
+    logoutGH() {
+	    auth.signOut();
+    }
   }
 }
 </script>

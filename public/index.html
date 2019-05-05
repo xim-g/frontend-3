@@ -7,6 +7,21 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDOlzK-n4TGino-6p5k1YP0W1T5G6BdFhI",
+        authDomain: "polihacks-ppg.firebaseapp.com",
+        databaseURL: "https://polihacks-ppg.firebaseio.com",
+        projectId: "polihacks-ppg",
+        storageBucket: "polihacks-ppg.appspot.com",
+        messagingSenderId: "537216423041",
+        appId: "1:537216423041:web:7821a6c277aa583e"
+      };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+    </script>
     <title>shynerds</title>
   </head>
   <body>
