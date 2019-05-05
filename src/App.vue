@@ -14,6 +14,20 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted(){
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, {
+        dismissible: false 
+      });
+    });
+	}
+}
+</script>
+
+
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

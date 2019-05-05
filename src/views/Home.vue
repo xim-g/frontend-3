@@ -11,7 +11,7 @@
     <br>
     <br>
     <br>
-    <tit2>Actividades</tit2>
+    <span class="titulo2">Actividades</span>
     <br>
     <img alt="Logo" src="../assets/gym.jpg">
     <br>
@@ -25,10 +25,10 @@
     <br>
     <img alt="Logo" src="../assets/LOGO.jpg">
     <br>
-    <tt> &nbsp; Shynerds </tt>
+    <span class="titulo"> &nbsp; Shynerds </span>
     <br>
-    <tit> No estás solo...
-    </tit>
+    <span class="titulotitulo"> No estás solo...
+    </span>
      <br> <br> <br> <br>
     <a class="waves-effect waves-light btn-large" @click="loginFB()"><i class="material-icons left">cloud</i>Iniciar con Facebook</a>
      <br> <br> <br> <br> <br>
@@ -46,7 +46,7 @@
     <br>
     <br>
     <br>
-    <tit2>Actividades</tit2>
+    <span class="titulo2">Actividades</span>
     <br>
     <img alt="Logo" src="../assets/concierto.jpg">
     <br>
@@ -107,7 +107,7 @@ bo {
   border-top-width:1px;
   border-bottom:3px solid #777;
 }
-tit {
+.titulo {
     color: 0B507A;
    	font-family: Georgia, "Times New Roman",
           Times, serif; 
@@ -115,7 +115,7 @@ tit {
    	
    	}
 
- tt {
+.titulotitulo {
     color: 0B507A;
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif;
@@ -124,7 +124,7 @@ tit {
    	font-weight: 900;
    	}
 
- tit2 {
+ .titulo2 {
     color: 0915D6;
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif;
