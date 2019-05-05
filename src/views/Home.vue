@@ -31,8 +31,8 @@
     </span>
      <br> <br> <br> <br>
     <a class="waves-effect waves-light btn-large" @click="loginFB()"><i class="material-icons left">cloud</i>Iniciar con Facebook</a>
-     <br> <br> <br> <br> <br>
-    <a class="waves-effect waves-light btn-large" @click="loginGH()"><i class="material-icons right">cloud</i>Iniciar con GitHub</a>
+     <br> <br> <br>
+    <a class="waves-effect waves-light btn-large" @click="loginGH()"><i class="material-icons left">cloud</i>Iniciar con GitHub</a>
   
   </div>
   

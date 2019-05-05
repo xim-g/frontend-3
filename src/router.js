@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Test from './views/Test.vue'
-import Registro from './views/Registro.vue'
-import results from './views/results.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from './views/Home.vue';
+import Test from './views/Test.vue';
+import Registro from './views/Registro.vue';
+import Actividades from './views/Actividades.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
@@ -27,9 +27,9 @@ export default new Router({
       component: Registro
     },
     {
-      path: '/results',
-      name: 'results',
-      component: results
+      path: '/actividades',
+      name: 'Actividades',
+      component: Actividades
     },
   ]
 })
